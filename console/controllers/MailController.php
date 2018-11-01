@@ -37,7 +37,7 @@ class MailController extends Controller
         ];
         foreach ($mail_array as $recipient)
         {
-            $result = Yii::$app->mailer->compose('mail_tpl', [
+            $result = Yii::$app->mailer->compose('mail_tpl2', [
                 'pin' => '745001',
                 'sale_pic' => '/app/sender-zen/common/mail/layouts/image/3tp_act.png',
                 'logo' => '/app/sender-zen/common/mail/layouts/image/logo.png',
