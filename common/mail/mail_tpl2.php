@@ -10,8 +10,8 @@
         width:100%;
     }
     .middle .outer {
-        /*background-color: #ffffff;
-        border-radius:4px;*/
+        background-color: #ffffff;
+        border-radius:4px;
     }
     .header,
     .middle,
@@ -19,7 +19,7 @@
         margin:0 10px;
         text-align: center;
         background-color: #f4f4f4;
-        table-layout: fixed;
+        /* table-layout: fixed; */
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
     }
@@ -198,7 +198,7 @@
 
 <span class="preheader" style="display: none !important; font-size: 0;"></span>
 
-<div class="header" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: subpixel-antialiased; -webkit-text-size-adjust: 100%; background-color: #f4f4f4; margin: 0 10px; table-layout: fixed; text-align: center;">
+<div class="header" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: subpixel-antialiased; -webkit-text-size-adjust: 100%; background-color: #f4f4f4; margin: 0 10px; text-align: center;">
     <!--[if (gte mso 9)|(IE)]>
     <table width="600" align="center">
         <tr>
