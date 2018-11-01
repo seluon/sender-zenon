@@ -11,7 +11,7 @@
     }
     .middle .outer {
         background-color: #ffffff;
-        border-radius:4px;
+        /* border-radius:4px; */
     }
     .header,
     .middle,
@@ -231,7 +231,7 @@
     </table>
     <![endif]-->
 </div>
-<div class="middle" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: subpixel-antialiased; -webkit-text-size-adjust: 100%; background-color: #f4f4f4; margin: 0 10px; table-layout: fixed; text-align: center;">
+<div class="middle" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: subpixel-antialiased; -webkit-text-size-adjust: 100%; background-color: #f4f4f4; margin: 0 10px;">
     <!--[if (gte mso 9)|(IE)]>
     <table width="600" align="center" bgcolor="#ffffff" style="background: #ffffff;">
         <tr>
@@ -348,7 +348,7 @@
     </table>
     <![endif]-->
 </div>
-<div class="footer" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: subpixel-antialiased; -webkit-text-size-adjust: 100%; background-color: #f4f4f4; margin: 0 10px; table-layout: fixed; text-align: center;">
+<div class="footer" style="-ms-text-size-adjust: 100%; -webkit-font-smoothing: subpixel-antialiased; -webkit-text-size-adjust: 100%; background-color: #f4f4f4; margin: 0 10px; text-align: center;">
     <!--[if (gte mso 9)|(IE)]>
     <table width="600" align="center">
         <tr>
