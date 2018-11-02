@@ -9,5 +9,17 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+
+        'redis' => [
+            'class' => yii\redis\Connection::className(),
+        ],
+
+        'queue' => [
+            'class' => \yii\queue\redis\Queue::className(),
+            'redis' => 'redis',
+            'channel' => 'queue',
+        ],
+
+
     ],
 ];
