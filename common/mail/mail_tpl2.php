@@ -253,7 +253,7 @@
                                     Уважаемый Абонент!
                                 </div><br>
                                 <div style="-webkit-font-smoothing: subpixel-antialiased; color: #666666; font-family: Arial; font-size: 16px; font-weight: 400; line-height: 19px;">
-                                    По договору N #####<br> 
+                                    По договору N <?=$pin?><br>
                                     Вы являетесь владельцем виртуального сервера по 
                                     тарифному плану <a style="color: rgb(46, 111, 133);" href="https://www.zenon.net/hosting/">линейки Зенон</a>.
                                 </div><br>

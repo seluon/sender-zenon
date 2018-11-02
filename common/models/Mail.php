@@ -32,11 +32,18 @@ class Mail extends ActiveRecord
     }
 
 
-    public static function sendMail($recipient, $pin)
+    public function sendMail($recipient, $pin)
     {
-        Yii::$app->mailer->compose('html')
+        Yii::$app->mailer->compose('mail_tpl2', [
+            'pin' => $pin,
+            'sale_pic' => '/app/sender-zen/common/mail/layouts/image/3tp_act.png',
+            'logo' => '/app/sender-zen/common/mail/layouts/image/logo.png',
+            'ico_hend' => '/app/sender-zen/common/mail/layouts/image/ico_hend.png',
+            'ico_shield' => '/app/sender-zen/common/mail/layouts/image/ico_shield.png',
+            'ico_symb' => '/app/sender-zen/common/mail/layouts/image/ico_symb.png'
+        ])
             ->setTo($recipient)
-            ->setSubject("Test message")
+            ->setSubject($this->subject)
             ->send();
     }
 }
