@@ -123,8 +123,6 @@ Class CheckMail
 
 }
 
-$a =  CheckMail::checkEmailRelay('lastovskiy56@gmail.com');
-var_dump($a);
 
 
 
