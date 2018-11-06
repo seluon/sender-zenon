@@ -567,15 +567,15 @@
                 <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
                     <tbody><tr>
                         
-                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">
+                        <td valign="top" class="mcnTextContent" style="padding: 0px 18px 9px;color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">
                         
-                            <p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Уважаемый Абонент!</p>
+                            <p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Уважаемый Абонент!</p>
 
-<p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">По договору N</p>
+<p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">По договору N <?= $php ?></p>
 
-<p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Вы являетесь владельцем виртуального сервера по тарифному плану <a href="https://www.zenon.net/hosting/">линейки Зенон</a>.</p>
+<p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Вы являетесь владельцем виртуального сервера по тарифному плану <a href="https://www.zenon.net/hosting/">линейки Зенон</a>.</p>
 
-<p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Хостинг-провайдер "Зенон Н.С.П." рад сообщить Вам о запуске новой акции! Специальное осеннее предложение - больше хостинга за те же деньги!</p>
+<p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Хостинг-провайдер "Зенон Н.С.П." рад сообщить Вам о запуске новой акции! Специальное осеннее предложение - больше хостинга за те же деньги!</p>
 
                         </td>
                     </tr>
