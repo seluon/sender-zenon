@@ -499,9 +499,6 @@
 
 }</style></head>
     <body>
-        <!--*|IF:MC_PREVIEW_TEXT|*-->
-        <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
-        <!--*|END:IF|*-->
         <center>
             <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
                 <tr>
@@ -681,7 +678,7 @@
                             <table style="border-collapse: collapse;">
 	<tbody>
 		<tr>
-			<td style="-webkit-font-smoothing: subpixel-antialiased; padding-right: 14px;"><img alt="" height="24" src="<?= $message->embed($ico_symb); ?>" width="24"></td>
+			<td style="-webkit-font-smoothing: subpixel-antialiased; padding-right: 12px; width: 30px; height: 30px;""><img alt="" height="24" src="<?= $message->embed($ico_symb); ?>" width="24"></td>
 			<td style="-webkit-font-smoothing: subpixel-antialiased; padding-bottom: 7px;">
 			<div style="-webkit-font-smoothing: subpixel-antialiased; color: #666666; font-family: Arial; font-size: 15px; font-weight: 400; line-height: 18px;">При заказе годового пакета услуг по тарифным планам Зенон-420, Зенон-630 и Зенон-840 получите дополнительно 30, 60 или 90 дней работы В ПОДАРОК!</div>
 			</td>
