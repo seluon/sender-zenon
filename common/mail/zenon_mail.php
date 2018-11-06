@@ -695,7 +695,7 @@
 		<tr>
 			<td style="-webkit-font-smoothing: subpixel-antialiased; padding-right: 14px;"><img alt="" height="30" src="<?= $message->embed($ico_shield); ?>" width="26"></td>
 			<td style="-webkit-font-smoothing: subpixel-antialiased; padding-bottom: 7px;">
-			<div style="-webkit-font-smoothing: subpixel-antialiased; color: #666666; font-family: Arial; font-size: 15px; font-weight: 400; line-height: 18px; padding-bottom: 7px;">Успейте воспользоваться нашим предложением! Акция действует до 31 ноября 2018 года. Для участия необходимо направить запрос на <a href="mailto:hosting@zenon.net" style="color: #2E6F85;">hosting@zenon.net</a></div>
+			<div style="-webkit-font-smoothing: subpixel-antialiased; color: #666666; font-family: Arial; font-size: 15px; font-weight: 400; line-height: 18px; padding-bottom: 7px;">Успейте воспользоваться нашим предложением! Акция действует до 30 ноября 2018 года. Для участия необходимо направить запрос на <a href="mailto:hosting@zenon.net" style="color: #2E6F85;">hosting@zenon.net</a></div>
 			</td>
 		</tr>
 	</tbody>
