@@ -83,7 +83,7 @@
 			line-height:inherit !important;
 		}
 		#bodyCell{
-			padding:10px;
+			padding:0;
 		}
 		.templateContainer{
 			max-width:600px !important;
@@ -279,7 +279,7 @@
 		#templateLowerBody .mcnTextContent,#templateLowerBody .mcnTextContent p{
 			color:#202020;
 			font-family:Helvetica;
-			font-size:16px;
+			font-size:11px;
 			line-height:150%;
 			text-align:left;
 		}
@@ -305,7 +305,7 @@
 		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
 			color:#656565;
 			font-family:Helvetica;
-			font-size:12px;
+			font-size:13px;
 			line-height:150%;
 			text-align:center;
 		}
@@ -333,7 +333,7 @@
 
 }	@media only screen and (max-width: 480px){
 		#bodyCell{
-			padding-top:10px !important;
+			padding-top:0;
 		}
 
 }	@media only screen and (max-width: 480px){
@@ -486,14 +486,14 @@
 }	@media only screen and (max-width: 480px){
 
 		#templateLowerBody .mcnTextContent,#templateLowerBody .mcnTextContent p{
-			font-size:16px !important;
+			font-size:11px !important;
 			line-height:150% !important;
 		}
 
 }	@media only screen and (max-width: 480px){
 
 		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
-			font-size:14px !important;
+			font-size:12px !important;
 			line-height:150% !important;
 		}
 
@@ -571,7 +571,7 @@
                         
                             <p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Уважаемый Абонент!</p>
 
-<p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">По договору N<?=$pin?></p>
+<p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">По договору N</p>
 
 <p style="color: #666666;font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Вы являетесь владельцем виртуального сервера по тарифному плану <a href="https://www.zenon.net/hosting/">линейки Зенон</a>.</p>
 
@@ -591,39 +591,10 @@
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-              	<!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
-			    
-				<!--[if mso]>
-				<td valign="top" width="300" style="width:300px;">
-				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
-                        
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                        
-                            
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
-                
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+</table>
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
     <tbody class="mcnButtonBlockOuter">
         <tr>
             <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
@@ -798,7 +769,7 @@
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
                             Юридический адрес: 125040, г. Москва, ул. Ямского поля 1-я, д. 19, стр. 1<br>
-Служба поддержки (круглосуточно): +7 (495) 956-4035 | 8-800-200-93-66 | <a style="color: #333333; font-size: 13px; text-decoration: underline;" href="mailto:support@zenon.net">support@zenon.net</a>
+							Служба поддержки (круглосуточно): +7 (495) 956-4035 | 8-800-200-93-66 | <a style="color: #333333; text-decoration: underline;" href="mailto:support@zenon.net">support@zenon.net</a>
                         </td>
                     </tr>
                 </tbody></table>
