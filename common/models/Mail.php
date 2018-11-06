@@ -34,7 +34,7 @@ class Mail extends ActiveRecord
 
     public function sendMail($recipient, $pin)
     {
-        Yii::$app->mailer->compose('mail_tpl2', [
+        Yii::$app->mailer->compose('zenon_mail', [
             'pin' => $pin,
             'sale_pic' => '/app/sender-zen/common/mail/layouts/image/3tp_act.png',
             'logo' => '/app/sender-zen/common/mail/layouts/image/logo.png',
