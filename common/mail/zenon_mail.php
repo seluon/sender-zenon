@@ -571,7 +571,7 @@
                         
                             <p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Уважаемый Абонент!</p>
 
-<p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">По договору N <?= $php ?></p>
+<p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">По договору N <?= $pin ?></p>
 
 <p style="color: #666666;font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 16px;line-height: 125%;">Вы являетесь владельцем виртуального сервера по тарифному плану <a href="https://www.zenon.net/hosting/">линейки Зенон</a>.</p>
 
