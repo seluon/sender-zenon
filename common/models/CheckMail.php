@@ -6,6 +6,8 @@
  * Time: 18:44
  */
 
+namespace common\models;
+
 
 Class CheckMail
 
@@ -27,19 +29,14 @@ Class CheckMail
         $check = new self();
         $check->getDomianName($email);
 
-        /* Определяет, свойство serverMailRelayArray */
-        if($check->checkDomianRecordMX())
+
+        if($check->checkDomianRecordMX() or $check->checkDomianRecordA())
         {
-            $check->getMxRecord();
-            $check->checkConnectServerMail();
+            $check->result = true;
 
         } else {
-            if($check->checkDomianRecordA())
-            {
-                $check->getARecord();
-                $check->checkConnectServerMail();
-            }
 
+            $check->result = false;
         }
 
         return $check->result;
@@ -94,31 +91,6 @@ Class CheckMail
             $array += [$value['class'] => $value['ip']];
         }
         $this->serverMailRelayArray = $array;
-    }
-
-    /* Проверяет принимающие сервера на доступность
-    (до тех пор пока один из них не ответит 220)
-     */
-    private function checkConnectServerMail()
-    {
-        foreach ($this->serverMailRelayArray as $key => $value)
-        {
-
-            $conn = fsockopen($value, 25, $errno,$errstr, 5 );
-
-            if($conn)
-            {
-                $get = fgets($conn, 256);
-                if(substr($get, 0,3) =='220')
-                {
-                    fputs($conn, "QUIT\n");
-                    $this->result = true;
-                    break;
-                }
-            }
-
-        }
-
     }
 
 }
