@@ -34,6 +34,14 @@ class Recipient extends ActiveRecord
             ->all();
     }
 
+    public static function searchEmail($email)
+    {
+        $res = self::find()->where('email = :email', [':email' => $email])->one();
+        if (isset($res)) {
+            return true;
+        }
+    }
+
     public static function getAllEmail()
     {
         $query = self::find()->asArray()->select('email')->all();
