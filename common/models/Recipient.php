@@ -18,9 +18,9 @@ class Recipient extends ActiveRecord
     public $num_cycles;
 
 
-    public function __construct()
+    public function __construct($limit)
     {
-        $this->limit = 5;
+        $this->limit = $limit;
         $this->offset = 0;
         $this->num_cycles = intval((self::find()->count('*')) / $this->limit);
     }
