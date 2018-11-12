@@ -16,17 +16,19 @@ use common\models\Recipient;
 class MailController extends Controller
 {
 
-    public function actionSend()
+    public function actionSend($time, $limit)
     {
-        $model = new Recipient();
-        $mail = new Mail(2);
+        $model = new Recipient($limit);
+        $mail = new Mail($time);
         for($i = 0; $i < $model->num_cycles; $i++)
         {
             $mail->makeQueueEmail($model->getArrayRecipient());
             $model->offset += $model->limit; // Смещение
-            $mail->time += $mail->time_level;
+            $mail->time += $mail->time_level; // Увелечение по времени
         }
+        // Получаем emails и создаем очередь на отправку
         $mail->makeQueueEmail($model->getArrayRecipient());
+
     }
 
 }
