@@ -29,6 +29,7 @@ class Recipient extends ActiveRecord
     {
         return self::find()->asArray()
             ->select(['email','pin'])
+            ->where(['status' => 1])
             ->offset($this->offset)
             ->limit($this->limit)
             ->all();
