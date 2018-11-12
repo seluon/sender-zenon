@@ -15,7 +15,6 @@ use Yii;
 class Mail extends ActiveRecord
 {
     public $To;
-    public $subject;
     public $time;
     public $time_level;
 
@@ -32,7 +31,7 @@ class Mail extends ActiveRecord
     }
 
 
-    public function sendMail($recipient, $pin)
+    public static function sendMail($recipient, $pin)
     {
         Yii::$app->mailer->compose('zenon_mail', [
             'pin' => $pin,
@@ -42,8 +41,13 @@ class Mail extends ActiveRecord
             'ico_shield' => '/app/sender-zen/common/mail/layouts/image/ico_shield.png',
             'ico_symb' => '/app/sender-zen/common/mail/layouts/image/ico_symb.png'
         ])
+            ->addHeader('Precedence', 'bulk')
+            ->addHeader('List-Id', 'Autumn promotion <autumn-promotion.zenon.net>')
+            ->addHeader('List-Unsubscribe', 'unsubscribe@zenon.net')
+            ->setReplyTo('hosting@zenon.net')
+            ->setFrom(['sender@zenon.net' => 'Хостинг-провайдер Зенон Н.С.П'])
             ->setTo($recipient)
-            ->setSubject($this->subject)
+            ->setSubject("Специальное осеннее предложение от хостинг-провайдер \"Зенон Н.С.П.\"")
             ->send();
     }
 }
