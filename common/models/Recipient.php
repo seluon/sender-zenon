@@ -18,7 +18,7 @@ class Recipient extends ActiveRecord
     public $num_cycles;
 
 
-    public function __construct($limit)
+    public function setLimitArray($limit)
     {
         $this->limit = $limit;
         $this->offset = 0;
@@ -52,6 +52,22 @@ class Recipient extends ActiveRecord
             $arr[] = $email['email'];
         }
         return $arr;
+    }
+
+    public static function setEmailStatusOff($email)
+    {
+        $query = self::find()->where(['email' => $email])->one();
+        $query->status = 0;
+        $query->save();
+
+    }
+
+    public static function setEmailStatusOn($email)
+    {
+        $query = self::find()->where(['email' => $email])->one();
+        $query->status = 1;
+        $query->save();
+
     }
 
 }
