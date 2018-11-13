@@ -54,6 +54,17 @@ class Recipient extends ActiveRecord
         return $arr;
     }
 
+    public static function getEmailStatus($email)
+    {
+        $query = self::find()
+            ->asArray()
+            ->select('status')
+            ->where(['email' => $email])
+            ->one();
+        return $query['status'];
+
+    }
+
     public static function setEmailStatusOff($email)
     {
         $query = self::find()->where(['email' => $email])->one();
