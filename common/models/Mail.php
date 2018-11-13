@@ -33,6 +33,7 @@ class Mail extends ActiveRecord
 
     public static function sendMail($recipient, $pin)
     {
+        $uid = uniqid();
         Yii::$app->mailer->compose('zenon_mail', [
             'pin' => $pin,
             'sale_pic' => '/app/sender-zen/common/mail/layouts/image/3tp_act.png',
@@ -43,7 +44,7 @@ class Mail extends ActiveRecord
         ])
             ->addHeader('Precedence', 'bulk')
             ->addHeader('List-Id', 'Autumn promotion <autumn-promotion.zenon.net>')
-            ->addHeader('List-Unsubscribe', 'unsubscribe@zenon.net')
+            ->addHeader('List-Unsubscribe', "<mailto:unsubscribe@zenon.net?subject=$uid>")
             ->setReplyTo('hosting@zenon.net')
             ->setFrom(['sender@zenon.net' => 'Хостинг-провайдер Зенон Н.С.П'])
             ->setTo($recipient)
