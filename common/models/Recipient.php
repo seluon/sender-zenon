@@ -17,6 +17,10 @@ class Recipient extends ActiveRecord
     public $offset;
     public $num_cycles;
 
+    public static function tableName()
+    {
+        return 'all_recipient';
+    }
 
     public function setLimitArray($limit)
     {
