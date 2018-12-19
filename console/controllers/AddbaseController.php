@@ -13,6 +13,15 @@ use yii\console\Controller;
 
 class AddbaseController extends Controller
 {
+
+    public function actionAddMailBase($pin, $email)
+    {
+        $model = new Recipient();
+        $model->email = $email;
+        $model->pin = $pin;
+        $model->save();
+    }
+
     public function actionAddMailFromFile($file)
     {
         $path = '/app/sender-zen/console/runtime/' . $file;
