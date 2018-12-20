@@ -547,7 +547,7 @@
                                     <tr>
                                     <td align="center" valign="top" width="300" style="width:300px;">
                                     <![endif]-->
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="600" class="columnWrapper">
                                         <tr>
                                             <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
     <tbody class="mcnTextBlockOuter">
@@ -590,11 +590,11 @@
 </table>
 
 
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:300px;">
     <tbody class="mcnButtonBlockOuter">
         <tr>
             <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 8px;background-color: #7EB6C9;">
+                <table border="0" cellpadding="0" cellspacing="0" width="300px" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 8px;background-color: #7EB6C9;">
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 15px;">
@@ -611,27 +611,9 @@
                                     </table>
                                     <!--[if (gte mso 9)|(IE)]>
                                     </td>
-                                    <td align="center" valign="top" width="300" style="width:300px;">
                                     <![endif]-->
-                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
-                                        <tr>
-                                            <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageCardBlock">
-    <tbody class="mcnImageCardBlockOuter">
-        <tr>
-            <td class="mcnImageCardBlockInner" valign="top" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-
-
-
-
-
-            </td>
-        </tr>
-    </tbody>
-</table></td>
-                                        </tr>
-                                    </table>
+             
                                     <!--[if (gte mso 9)|(IE)]>
-                                    </td>
                                     </tr>
                                     </table>
                                     <![endif]-->
@@ -686,11 +668,11 @@
                         
                             <div style="text-align: left;">  Если у Вас возникнут вопросы, обращайтесь в Отдел продаж по телефонам (495) 956-1380,
 
-                                (800) 200-93-66  или по e-mail hosting@zenon.net.
+                                (800) 200-93-66  или по e-mail hosting@zenon.net.<br><br>С уважением, ООО "Зенон Н.С.П."
 
 
 
-                                <p>С уважением, ООО <Зенон Н.С.П.></p></div>
+                                </div>
 
                         </td>
                     </tr>
