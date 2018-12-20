@@ -36,17 +36,17 @@ class Mail extends ActiveRecord
         $uid = uniqid();
         Yii::$app->mailer->compose('zenon_mail_price', [
             'pin' => $pin,
-            'sale_pic' => '/app/sender.php-zen/common/mail/layouts/image/3tp_act.png',
-            'logo' => '/app/sender.php-zen/common/mail/layouts/image/logo.png',
-            'ico_hend' => '/app/sender.php-zen/common/mail/layouts/image/ico_hend.png',
-            'ico_shield' => '/app/sender.php-zen/common/mail/layouts/image/ico_shield.png',
-            'ico_symb' => '/app/sender.php-zen/common/mail/layouts/image/ico_symb.png'
+            'sale_pic' => '/app/sender-zen/common/mail/layouts/image/3tp_act.png',
+            'logo' => '/app/sender-zen/common/mail/layouts/image/logo.png',
+            'ico_hend' => '/app/sender-zen/common/mail/layouts/image/ico_hend.png',
+            'ico_shield' => '/app/sender-zen/common/mail/layouts/image/ico_shield.png',
+            'ico_symb' => '/app/sender-zen/common/mail/layouts/image/ico_symb.png'
         ])
             ->addHeader('Precedence', 'bulk')
             ->addHeader('List-Id', 'Change price <change-price.zenon.net>')
             ->addHeader('List-Unsubscribe', "<mailto:unsubscribe@zenon.net?subject=$uid>")
             ->setReplyTo('hosting@zenon.net')
-            ->setFrom(['sender.php@zenon.net' => 'Хостинг-провайдер Зенон Н.С.П'])
+            ->setFrom(['sender@zenon.net' => 'Хостинг-провайдер Зенон Н.С.П'])
             ->setTo($recipient)
             ->setSubject("Изменение цен компании ООО «Зенон Н.С.П.»")
             ->send();
